@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    margin-bottom: 10px; /* Spacing between sections */
+  }
+  
+  /* Flex container for label and button */
+  .label-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 145px;
+    margin-bottom: 10px; /* Added spacing between text and counter */
+  }
+  
+  /* Ensure the font matches for both div and textarea */
+  .highlighter, .form-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    letter-spacing: normal;
+  }
+  
+  .form-control {
+    resize: none;
+    z-index: 2; /* Ensure textarea is in front when active */
+    visibility: hidden; /* Hidden until focused */
+  }
+  
+  .highlighter {
+    z-index: 1; /* Highlighter is behind by default */
+    visibility: visible;
+    background-color: #e6f7ff; /* Light blue when not editing */
+  }
+  
+  .count-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .count-label {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  /* Word highlight colors with light background and dark text */
+  
+  /* Exceeds most, if not all expectations */
+  .word-exceeds-most {
+    background-color: #d4f7d4; /* Light green background */
+    color: #4CAF50; /* Darker green text */
+  }
+  
+  /* Exceeds some, but not all expectations */
+  .word-exceeds-some {
+    background-color: #cde7ff; /* Light blue background */
+    color: #1E90FF; /* Darker blue text */
+  }
+  
+  /* Met all expectations */
+  .word-met-expectations {
+    background-color: #ffe5b2; /* Light orange background */
+    color: #FFA500; /* Darker orange text */
+  }
+  
+  /* Met some expectations */
+  .word-met-some {
+    background-color: #ffdfec; /* Light pink background */
+    color: #FF69B4; /* Darker pink text */
+  }
+  
+  /* Words to avoid */
+  .word-avoid {
+    background-color: #ffcccc; /* Light red background */
+    color: #FF0000; /* Darker red text */
+  }
+  
+/* CSS for numbers that need to be bold */
+.bold-number {
+    font-weight: bold;
+    color: #000; /* Optional: Set color for numbers */
+  }
